@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets
+.env
+
+# Data that is cached or regenerated
+data/raw/
+data/embeddings.npy
+
+# Personal Claude Code instructions
+CLAUDE.local.md

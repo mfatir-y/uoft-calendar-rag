@@ -1,0 +1,14 @@
+# Project settings. Read with tomllib (standard library, Python 3.11+).
+
+[llm]
+ollama_model = "llama3.2:3b"
+
+[chunking]
+max_tokens = 450      # counted with the embedding model's tokenizer, heading path included
+overlap_tokens = 50   # only where one section is split across chunks
+
+[retrieval]
+top_k = 5
+
+[scraper]
+request_delay_seconds = 1.0
